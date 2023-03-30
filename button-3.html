@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button 101-200</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/045d1c8df6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  .back{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 100%;
+    margin: 50px 20px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(204,203,203);
+}
+
+@media screen and (max-width: 680px) {
+  .back{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 100%;
+    margin: 0 20px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(204,203,203);
+}
+
+section h1 span{
+        cursor: pointer;
+        font-size: 1em;
+        padding: 5px 70px;
+        border-radius: 12px;
+        color: white;
+        box-shadow:  0 5px 20px #01a6ff6a;
+        background: linear-gradient(to right, #01A8FF, #0169FF);
+        border: none;
+    }
+}
+</style>
+<body>
+    <header>
+      <button class="nav-icon"><div class="line"></div><div class="line-2"></div><div class="line-3"></div></button>
+      <img src="image/logo.png" alt="" class="logo">
+      <button class="dark"><i class="fa-regular fa-moon "></i></button>
+      <button class=" light"><i class="fa-regular fa-sun"></i></button>
+    </header>
+    <div class="nav">
+        <i class="fa-solid fa-xmark fa-xl close" style="margin: 30px 30px 0 0; text-align: center;" ></i>
+        <a href="index.html"><div class="home"><i class="fa-solid fa-house fa-xl" style="color: white; text-align: center; margin-top: 23px; margin-left: 4px ; "></i></div></a>
+        <a href="audio-btn.html"><div class="audio"><i class="fa-solid fa-volume-high fa-xl" style="color: white; text-align: center; margin-top: 23px; margin-right:0px ; "></i></div></a>
+        <a href="testmony.html"><div class="testmony"><i class="fa-solid fa-comment-dots fa-xl" style="color: white; text-align: center; margin-top: 23px; margin-right:0px ; "></i></div></a>
+        <a href="https://www.youtube.com/channel/UCZp2yj03Shb6lUu3s6ebzgA"><div class="youtube"><i class="fa-brands fa-youtube fa-xl" style="color: white; text-align: center; margin-top: 23px; margin-right:0px ; "></i></div></a>
+        <a href="button-3.html"><div class="help"><i class="fa-solid fa-question fa-xl" style="color: white; text-align: center; margin-top: 23px; margin-right:0px ; "></i></div></a>
+      </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<a href="index.html"><img src="image/back.png" alt="" class="back" ></a>
+<section><h1><span>COMING SOON</span></h1></section>
+
+<script>
+    let openNav = document.querySelector(".nav-icon")
+      let closenav = document.querySelector(".close")
+      let sideBar = document.querySelector(".nav")
+      let dark = document.querySelector(".dark")
+      let light = document.querySelector(".light")
+      let body = document.querySelector("body")
+      let cancel = document.querySelector(".cancel")
+      let home = document.querySelector(".home")
+      let audio = document.querySelector(".audio")
+      let testmony = document.querySelector(".testmony")
+      let youtube = document.querySelector(".youtube")
+      let help = document.querySelector(".help")
+
+
+      openNav.onclick = function() {
+        sideBar.classList.toggle("active")
+        home.classList.toggle("active")
+        audio.classList.toggle("active")
+        testmony.classList.toggle("active")
+        youtube.classList.toggle("active")
+        help.classList.toggle("active")
+      }
+
+      closenav.onclick = function() {
+        sideBar.classList.toggle("active")
+        home.classList.toggle("active")
+        audio.classList.toggle("active")
+        testmony.classList.toggle("active")
+        youtube.classList.toggle("active")
+        help.classList.toggle("active")
+      }
+
+      dark.onclick = function() {
+        body.classList.toggle("active")
+      }
+
+      light.onclick = function() {
+        body.classList.toggle("active")
+      }
+
+      cancel.onclick = function() {
+        searchbar.classList.toggle("active")
+      }
+  </script>
+
+</body>
+</html>

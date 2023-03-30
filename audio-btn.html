@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Praise</title>
+    <link rel="stylesheet" href="button-1-style.css">
+    <script src="https://kit.fontawesome.com/045d1c8df6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+
+    section{
+        text-align: left;
+        margin-left: 15px;
+        margin-top: 0;
+    }
+
+    .first{
+      margin-top: 70px;
+    }
+
+    @media screen and (max-width: 680px) {
+      section{
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    .first{
+      margin-top: 0;
+    }
+    }
+</style>
+<body>
+    <header>
+      <a href="index.html"><button class="home-2"><i class="fa-solid fa-house fa-sl home-icon"></i></button></a>
+      <img src="image/logo.png" alt="" class="logo">
+      <button class="dark"><i class="fa-regular fa-moon "></i></button>
+      <button class=" light"><i class="fa-regular fa-sun"></i></button>
+      <button class="nav-icon"><div class="lin"></div><div class="lin-2"></div><div class="lin-3"></div></button>
+    </header>
+
+    <div class="nav">
+      <i class="fa-solid fa-xmark fa-xl close" style="margin: 30px 30px 0 0; text-align: center;" ></i>
+      <a href="index.html"><button class="home"><i class="fa-solid fa-house fa-xl" style="color: white; text-align: center; margin-top: 0px; margin-left: 0px ; "></i></button></a>
+      <a href="audio-btn.html"><button class="audio"><i class="fa-solid fa-volume-high fa-xl" style="color: white; text-align: center; margin-top: 0px; margin-right:0px ; "></i></button></a>
+      <a href="testmony.html"><button class="testmony"><i class="fa-solid fa-comment-dots fa-xl" style="color: white; text-align: center; margin-top: 0px; margin-right:0px ; "></i></button></a>
+      <a href="https://www.youtube.com/channel/UCZp2yj03Shb6lUu3s6ebzgA"><button class="youtube"><i class="fa-brands fa-youtube fa-xl" style="color: white; text-align: center; margin-top: 0px; margin-right:0px ; "></i></button></a>
+      <a href="store.html"><button class="help"><i class="fa-solid fa-arrow-down fa-xl" style="color: white; text-align: center; margin-top: 0px; margin-right:0px ; "></i></button></a>
+    </div>
+<br>
+<br>
+<br>    
+<br>
+<br>
+<section class="first"><h1><span>पिता की स्तुति</span></h1></section>
+<br>
+  <div class="container">
+    <audio controls class="audio-2">
+      <source src="audio/Pitah ki Stuti.mp3">
+    </audio>
+  </div>
+<br>
+<br>
+<br>
+<section><h1><span>परमेश्वर की स्तुति</span></h1></section> 
+<br>
+<div class="container">
+    <audio controls class="audio-2">
+      <source src="audio/Parmeshwar ki Stuti.mp3">
+    </audio>
+  </div> 
+<br>
+<div class="container">
+    <audio controls class="audio-2">
+      <source src="audio/Parmeshwar ki Stuti-2.mp3">
+    </audio>
+  </div> 
+<br>
+<br>
+<br>
+<section><h1><span>प्रभु की स्तुति</span></h1></section>
+<br>
+<div class="container">
+    <audio controls class="audio-2">
+      <source src="audio/Prabhu ki Stuti.mp3">
+    </audio>
+  </div> 
+<br>
+<br>
+<br>
+<section><h1><span>राजा की स्तुति</span></h1></section>
+<br>
+<div class="container">
+    <audio controls class="audio-2">
+      <source src="audio/Raja ki Stuti.mp3">
+    </audio>
+  </div> 
+<br>
+<br>
+<br>
+<section><h1><span>पवित्र प्रभु की स्तुति</span></h1></section>
+<br>
+<div class="container">
+    <audio controls class="audio-2">
+      <source src="audio/Pavitr Prabhu Ki Stuti.mp3">
+    </audio>
+  </div> 
+<br>
+<br>
+<br>
+<section><h1><span>परमेश्वर के नाम की स्तुति</span></h1></section>
+<br>
+<div class="container">
+    <audio controls class="audio-2">
+      <source src="audio/Parmeshwar ke naam ki Stuti.mp3">
+    </audio>
+  </div> 
+<br>
+<br>
+<a href="index.html"><button class="left">
+    <div class="icon" style="transform:translate(9px,-3px) rotate(-40deg);"></div>
+    <div class="icon" style="transform:translate(9px,4px) rotate(40deg);"></div>
+</button></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<script>
+  let openNav = document.querySelector(".nav-icon")
+  let closenav = document.querySelector(".close")
+  let sideBar = document.querySelector(".nav")
+  let dark = document.querySelector(".dark")
+  let light = document.querySelector(".light")
+  let body = document.querySelector("body")
+  let cancel = document.querySelector(".cancel")
+  let home = document.querySelector(".home")
+  let audio = document.querySelector(".audio")
+  let testmony = document.querySelector(".testmony")
+  let youtube = document.querySelector(".youtube")
+  let help = document.querySelector(".help")
+
+
+  openNav.onclick = function() {
+    sideBar.classList.toggle("active")
+    home.classList.toggle("active")
+    audio.classList.toggle("active")
+    testmony.classList.toggle("active")
+    youtube.classList.toggle("active")
+    help.classList.toggle("active")
+  }
+
+  closenav.onclick = function() {
+    sideBar.classList.toggle("active")
+    home.classList.toggle("active")
+    audio.classList.toggle("active")
+    testmony.classList.toggle("active")
+    youtube.classList.toggle("active")
+    help.classList.toggle("active")
+  }
+
+  dark.onclick = function() {
+    body.classList.toggle("active")
+  }
+
+  light.onclick = function() {
+    body.classList.toggle("active")
+  }
+
+  cancel.onclick = function() {
+    searchbar.classList.toggle("active")
+  }
+</script>
+</body>
+</html>

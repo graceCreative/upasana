@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@600&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: laila;
+}
+
+body{
+    transition: 0.2s;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    box-shadow: 0 2px 10px rgba(163, 163, 163, 0.534);
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+}
+
+.logo{
+    height: 100px;
+    cursor: pointer;
+    float: left;
+}
+
+.nav-icon{
+    height: 50px;
+    width: 50px;
+    margin-left: 2%;
+    padding: 5px;
+    border-radius: 100%;
+    box-shadow: 0 3px 6px rgb(204, 203, 203);
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+    background-color: white;
+}
+
+.line, .line-2, .line-3{
+    height: 8px;
+    width: 35px;
+    margin: 2px 0px;
+    background: linear-gradient(to right, #01A8FF, #0169FF) ;
+    border-radius: 50px;
+}
+
+.line-2{
+    width: 28px;
+    height: 8px;
+}
+
+.line-3{
+    width: 15px;
+    height: 8px;
+}
+
+.dark, .light{
+    font-size: xx-large;
+    color: #0169ff;
+    height: 50px;
+    width: 50px;
+    margin-right: 3%;
+    padding: 0px;
+    border-radius: 100%;
+    box-shadow: 0 3px 6px rgb(204, 203, 203);
+    cursor: pointer;
+    border: none;
+    background-color: white;
+}
+
+.nav{
+    position: fixed;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.601);
+    transition: 0.5s;
+}
+
+.nav.active{
+    width: 100px;
+    transition: 0.5s;
+}
+
+.home, .audio, .testmony, .help, .youtube{
+    position: relative;
+    top: 18%;
+    margin-top: 30px;
+    margin-left: -110px;
+    height: 80px;
+    width: 100px;
+    text-align: center;
+    align-items: center;
+    border-radius: 11px;
+    background-color: #0169ff;
+    box-shadow: -5px 8px 20px #01a6ff79;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    font-size: x-large;
+    border: none;
+}
+
+.home.active, .audio.active, .testmony.active, .youtube.active, .help.active{
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    top: 18%; left: 60%;
+    margin-left: 0px;
+}
+
+.close{
+    font-size: xx-large;
+    margin-top: 30px;
+    text-align: center;
+    float: right;
+    color: #0169FF;
+}
+
+body.active header{
+    background-color: rgb(62, 62, 62);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.534);
+    color: #fff;
+    transition: 0.5s;
+}
+
+body.active, body.active .nav{
+    background-color: #2b2b2b;
+    color: #fff;
+    transition: 0.2s;
+}
+
+body.active #button{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    transition: 0.2s;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.448);
+}
+
+body.active .icon{
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.448);
+}
+
+body.active .nav-icon, body.active .light{
+    background: #2b2b2b;
+    box-shadow: 0 3px 6px rgb(0, 0, 0);
+    transition: 0.2s;
+}
+
+body.active .light{
+    display: block;
+    visibility: visible;
+}
+
+.dark{
+    display: block;
+
+}
+
+.light{
+    display: none;
+    visibility: hidden;
+}
+
+body.active .dark{
+    display: none;
+    visibility: visible;
+    background: #2b2b2b;
+    box-shadow: 0 3px 6px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+
+
+section-1{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-left: 20px;
+    margin-top: 100px;
+}
+
+.carousel{
+    height: 350px;
+    margin-left: 0px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.125);
+}
+
+#box{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+#button{
+    width: 35vw;
+    font-size: large ;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin: 50px 05%;
+    border-radius: 12px;
+    padding: 15px 13%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.175);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background: white;
+    align-items: center
+}
+
+.icon{    
+    margin-left: 50px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+content{
+    width: 30vw;
+}
+
+section {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 70px;
+    padding-top: 25px;
+    
+}
+
+section h1 button{
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 15px 20%;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    box-shadow:  0 5px 20px #1fa0e677 ;
+    background: linear-gradient(to right, #0552aa , #1fa2e6);
+}
+
+
+section h1 span{
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 15px 20%;
+    border-radius: 15px;
+    color: white;
+    box-shadow:  0 5px 10px rgba(255, 166, 0, 0.916) ;
+    background: linear-gradient(to right, rgb(226, 136, 0), rgb(255, 166, 0));
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+    header{
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        box-shadow: 0 2px 10px rgba(163, 163, 163, 0.534);
+        background-color: white;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        position: fixed;
+        top: 0; left: 0; right: 0;
+    }
+
+    .logo{
+        height: 50px;
+        object-fit: cover;
+        margin-left: 10px;
+        transition: 0.2s;
+    }
+
+    .nav-icon{
+        height: 30px;
+        width: 30px;
+        border: none;
+        background-color: white;
+    }
+
+    .line, .line-2, .line-3{
+        height: 4px;
+        width: 20px;
+        margin: 2px 0px;
+        background: linear-gradient(to right, #01A8FF, #0169ff) ;
+        border-radius: 50px;
+    }
+
+    .line-2{
+        width: 10px;
+        height: 4px;
+    }
+
+    .line-3{
+        width: 20px;
+        height: 4px;
+    }
+
+    .nav{
+        width: 0px;
+    }
+
+    .nav.active{
+        width: 75px;
+    }
+
+
+    .home, .audio, .testmony, .help, .youtube{
+        position: relative;
+        top: 18%;
+        margin-top: 30px;
+        margin-left: -90px;
+        height: 50px;
+        width: 70px;
+        text-align: center;
+        align-items: center;
+        border-radius: 11px;
+        background-color: #0169FF;
+        box-shadow: -5px 8px 20px #01a6ff76;
+        text-decoration: none;
+        color: white;
+        transition: 0.5s;
+        font-size: large;
+        padding: none;
+        border: none;
+    }
+
+    .home.active, .audio.active, .testmony.active, .youtube.active, .help.active{
+        
+        margin-top: 30px;
+        position: relative;
+        top: 18%; left: 60%;
+        margin-left: 0px;
+    }
+
+    section-1{
+        margin-left: -10px;
+        margin-top: 50px;
+    }
+
+    .carousel{
+        height: 150px;
+        margin: 0 6px;
+        margin-top: 5px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.219);
+    }
+
+    #box{
+       margin: 0 20px;
+       justify-content: space-between;
+    }
+
+
+    #button{
+        display: flex;
+        width: 150px;
+        text-decoration: none;
+        color: black;
+        font-size: smaller;
+        text-align: center;
+        margin: 20px 0% 10px 0%;
+        border-radius: 12px;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.197);
+        text-decoration: none;
+        align-items: center;
+        align-content: center;
+        border: none;
+        background-color: white;
+    }
+
+    #button:hover{
+        background-color: rgb(248, 248, 248);
+        box-shadow: 0 0px 20px rgba(0, 0, 0, 0.200);
+    }
+
+    content{
+        margin-left: 0px;
+    }
+    
+    .icon{
+        height: 30px;
+        width: 30px;
+        margin: 0 40px 5px 40px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.114);
+        border-radius: 50%;
+        align-self: center;
+    }
+
+    h3{
+        width: 110px;
+    }
+
+
+    section{
+        margin-bottom: 20px;
+    }
+
+    section h1 button{
+        cursor: pointer;
+        font-size: 1em;
+        padding: 5px 70px;
+        border-radius: 12px;
+        color: white;
+        box-shadow:  0 10px 25px #016bff5d ;
+        background: linear-gradient(to right, #0552aa , #1fa2e6);
+        border: none;
+    }
+
+    section h1 button:hover{
+        box-shadow:  0 10px 20px #016bff5d ;
+        background: linear-gradient(to left, #01A8FF, #0169FF);
+    }
+
+    body.active header{
+        background-color: rgb(62, 62, 62);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.534);
+        color: #fff;
+        transition: 0.2s;
+    }
+    
+    body.active, body.active .nav{
+        background-color: #2b2b2b;
+        color: #fff;
+        transition: 0.2s;
+    }
+        
+    .dark, .light{
+        font-size: large;
+        color: #0169FF;
+        height: 30px;
+        width: 30px;
+        margin-right: 3%;
+        padding: 0px;
+        border-radius: 100%;
+        box-shadow: 0 3px 6px rgb(204, 203, 203);
+        cursor: pointer;
+        border: none;
+        background-color: white;
+    }
+    
+    body.active #button{
+        background-color: rgb(62, 62, 62);
+        color: white;
+        transition: 0.2s;
+        box-shadow: 0 3px 25px rgba(0, 0, 0, 0.175);
+    }
+    
+    body.active .nav-icon, body.active .light{
+        background: #2b2b2b;
+        box-shadow: 0 3px 6px rgb(0, 0, 0);
+        transition: 0.2s;
+    }
+    
+    body.active .light{
+        display: block;
+        background: #2b2b2b;
+        box-shadow: 0 3px 6px rgb(0, 0, 0);
+        transition: 0.2s;
+    }
+    
+    .dark{
+        display: block;
+        margin-left: 100px ;
+    }
+
+    .light{
+        display: none;
+    }
+    
+    body.active .dark{
+        display: none;
+        
+    }
+
+    
+    
+
+
+
+    
+}
