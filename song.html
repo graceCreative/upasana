@@ -12,6 +12,7 @@
     *{
         padding: 0;
         margin: 0;
+        box-sizing: content-box;
         text-decoration: none;
     }
 
@@ -31,7 +32,7 @@
     top: 0; left: 0; right: 0;
 }
 
-.left{
+.left{  display: none;
         margin-left: 8px;
         margin: 8px;
         height: 40px;
@@ -51,6 +52,36 @@
         transform:translate(12px,-4px) rotate(40deg);
     }
 
+    .section{
+        display: flex;
+        width: 100vw;
+        margin: 50px 35px;
+        text-align: center;
+
+    }
+
+    hr{
+        width: 85%;
+        margin-left: 30px;
+        align-content: center;
+    }
+
+
+    .btn{
+        width: 10px;
+        height: 10px;
+        padding: 20px;
+        margin: 10px 10px 10px 10px;
+        text-align: center;
+        align-items: center;
+        color: #e98376;
+        font-size: large;
+        font-family: poppins;
+        font-weight: bold;
+        background-color: white;
+        border-radius: 12px;
+    }
+
 
     .list{
         margin: 10px 10px;
@@ -61,12 +92,11 @@
     }
 
     .num{
-        width: 10px;
-        height: 10px;
-        padding: 5px 10px;
-        border-radius: 50%;
+        padding: 10px;
+        border-radius: 8px;
         color: white;
         font-family: poppins;
+        border: none;
         background: linear-gradient(to left, #e94c8e, #e98376) ;
     }
 
@@ -77,7 +107,7 @@
     }
 
     .song{
-        margin: 150px 10px 10px 10px;
+        margin: 50px 10px 10px 10px;
         padding: 25px 20px;
         background-color: white;
         border-radius: 15px;
@@ -87,7 +117,8 @@
     }
 
     .song h4{
-        font-family: laila, poppons;
+        font-family: poppins;
+        color: black;
     }
 
 
@@ -102,7 +133,89 @@
             <div class="icon" style="transform:translate(9px,4px) rotate(40deg);"></div>
           </button>
     </header>
+    <div class="section">
+        <a href="#btn1">
+            <span class="btn">अ</span>
+        </a>
+        <a href="#btn2">
+            <span class="btn">उ</span>
+        </a>
+        <a href="#btn3">
+            <span class="btn">ए</span>
+        </a>
+        <a href="#btn4">
+            <span class="btn">क</span>
+        </a>
+    </div>  
+    <div class="section">  
+        <a href="#btn5">
+            <span class="btn">ख</span>
+        </a>
+        <a href="#btn6">
+            <span class="btn">ग</span>
+        </a>
+        <a href="#btn7">
+            <span class="btn">च</span>
+        </a>
+        <a href="#btn8">
+            <span class="btn">ज</span>
+        </a>
+    </div>
+    <div class="section">
+        <a href="#btn9">
+            <span class="btn">त</span>
+        </a>
+        <a href="#btn10">
+            <span class="btn">द </span>
+        </a>
+        <a href="#btn11">
+            <span class="btn">ध</span>
+        </a>
+        <a href="#btn12">
+            <span class="btn">न </span>
+        </a>
+    </div>
+    <div class="section">
+        <a href="#btn13">
+            <span class="btn">प</span>
+        </a>
+        <a href="#btn14">
+            <span class="btn">फ</span>
+        </a>
+        <a href="#btn15">
+            <span class="btn">ब</span>
+        </a>
+        <a href="#btn16">
+            <span class="btn">म</span>
+        </a>
+    </div>
+    <div class="section">
+        <a href="#btn17">
+            <span class="btn">य</span>
+        </a>
+        <a href="#btn18">
+            <span class="btn">र</span>
+        </a>
+        <a href="#btn19">
+            <span class="btn">व</span>
+        </a>
+        <a href="#btn20">
+            <span class="btn">श</span>
+        </a>
+    </div>
+    <div class="section">
+        <a href="#btn21">
+            <span class="btn">स</span>
+        </a>
+        <a href="#btn22">
+            <span class="btn">ह</span>
+        </a>
+    </div>
+<br>
+    <hr>
+    <br id="btn1"><br>
 
+    <div class="btn">अ</div>
     <div class="listView">
         <a href="#song1"><div class="list">
             <span class="num">1</span><span class="name">अब्बा पिता हे प्रेमी परमेश्वर</span>
@@ -162,10 +275,10 @@
             <span class="num">19</span><span class="name">आसमानी खुशी से भर दे मुझको</span>
         </div></a>
         <a href="#song20"><div class="list">
-            <span class="num">20</span><span class="name">ओ आकाश और सूर्य चंद्रमा </span>
-        </div></a>
+            <span class="num">20</span><span class="name">अम्बर भी नया, धरती भी नई</span>
+        </div></a> 
         <a href="#song21"><div class="list">
-            <span class="num">21</span><span class="name"> अम्बर भी नया, धरती भी नई</span>
+            <span class="num">21</span><span class="name">ओ आकाश और सूर्य चंद्रमा </span>
         </div></a>
         <a href="#song22"><div class="list">
             <span class="num">22</span><span class="name">आँखो को बंद करलूँ। </span>
@@ -174,78 +287,184 @@
             <span class="num">23</span><span class="name">आशीष तुझसे चाहते हैं </span>
         </div></a>
         <a href="#song24"><div class="list">
-            <span class="num">24</span><span class="name">आशीष तुझसे चाहते हैं </span>
-        </div></a>
-        <a href="#song25"><div class="list">
-            <span class="num">25</span><span class="name">आओ करे आराधना</span>
+            <span class="num">24</span><span class="name">आओ करे आराधना</span>
         </div></a>
     </div>
-    <div class="song" id="song1">
+    <br id="btn2"><br><br>
+
+    <div class="btn">उ</div>
+
+<a href="#song25"><div class="list">
+   <span class="num">25</span><span class="name">उधार है, चँगाई है</span>
+</div></a>
+<a href="#song26"><div class="list">
+    <span class="num">26</span><span class="name">उसने दाखरस और तेल उंडेला</span>
+</div></a>
+<a href="#song27"><div class="list">
+    <span class="num">27</span><span class="name">उसके फाटकों में प्रवेश करूँगा</span>
+</div></a>
+<br id="btn3"><br><br>
+    
+    <div class="btn">ए</div>
+
+<a href="#song28"><div class="list">
+   <span class="num">28</span><span class="name">ए मेरे दिल क्यों है उदास</span>
+</div></a>
+<a href="#song29"><div class="list">
+    <span class="num">29</span><span class="name">ए मसीह तेरे बिना जिंदगी मे</span>
+</div></a>
+<a href="#song30"><div class="list">
+    <span class="num">30</span><span class="name">एक नाम है येशु</span>
+</div></a>
+
+<br id="btn4"><br><br>
+<div class="btn">क</div>
+<a href="#song31"><div class="list">
+    <span class="num">31</span><span class="name">कभी भी येशु न छोड़ेगा</span>
+ </div></a>
+ <a href="#song32"><div class="list">
+     <span class="num">32</span><span class="name">कोई भी छो मुझे</span>
+ </div></a>
+ <a href="#song33"><div class="list">
+     <span class="num">33</span><span class="name">करते हैं तेरी हम स्तुति</span>
+ </div></a>
+ <a href="#song34"><div class="list">
+    <span class="num">34</span><span class="name">कितना भलाई मुझको किया</span>
+</div></a>
+<a href="#song35"><div class="list">
+    <span class="num">35</span><span class="name">कोई नहीं है आदार के योग्य</span>
+</div></a>
+<a href="#song36"><div class="list">
+    <span class="num">36</span><span class="name">क्रूस पर, क्रूस पर</span>
+</div></a>
+
+<br id="btn5"><br><br>
+<div class="btn">ख</div>
+<a href="#song37"><div class="list">
+    <span class="num">37</span><span class="name">खुशी खुशी मनाओ</span>
+ </div></a>
+
+ <br id="btn6"> <br><br>
+<div class="btn"> ग </div>
+<a href="#song38"><div class="list">
+    <span class="num">38</span><span class="name">गिन गिन के स्तुति करूं</span>
+ </div></a>
+
+ <br id="btn7">
+ <br>
+ <br>
+<div class="btn"> च </div>
+<a href="#song39"><div class="list">
+    <span class="num">39</span><span class="name">चिंता ना कर</span>
+ </div></a>
+ <a href="#song40"><div class="list">
+    <span class="num">40</span><span class="name"> चट्टान </span>
+ </div></a>
+
+ <br id="btn8">
+ <br>
+ <br>
+<div class="btn" >ज</div>
+<a href="#song41"><div class="list">
+    <span class="num">41</span><span class="name">जय जय प्रभु यीशु की</span>
+ </div></a>
+ <a href="#song42"><div class="list">
+    <span class="num">42</span><span class="name">जय देने वाले प्रभु येशु को</span>
+ </div></a>
+ <a href="#song43"><div class="list">
+    <span class="num">43</span><span class="name">जब से प्यारा यीशु आया</span>
+ </div></a>
+ <a href="#song44"><div class="list">
+    <span class="num">44</span><span class="name">जय बोलो जय बोलो</span>
+ </div></a>
+ <a href="#song45"><div class="list">
+    <span class="num">45</span><span class="name">जिन्दगी मेरी बदल गई</span>
+ </div></a>
+ <a href="#song46"><div class="list">
+    <span class="num">46</span><span class="name">जय  जय  नाम  येशु  नाम</span>
+ </div></a>
+ <a href="#song47"><div class="list">
+    <span class="num">47</span><span class="name">जैसे माता संभालती है</span>
+ </div></a>
+ <a href="#song48"><div class="list">
+    <span class="num">48</span><span class="name">जो क्रूस पे कुर्बान है</span>
+ </div></a>
+
+
+
+
+
+
+    <br id="song1">
+    <div class="song">
         <h3>1. अब्बा पिता हे प्रेमी परमेश्वर</h3> <br>
         <h4>
             <p><span style="background-color: white; color: #222222; font-family: Poppins; font-size: 17.6px;">अब्बा पिता हे प्रेमी परमेश्वर,</span></p><span style="font-family: Poppins;"><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">दयालु ,तारणहार ,त्रिएक परमेश्वर।</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">1. खोए हुए थे, भटके हुए थे,</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">&nbsp; &nbsp;ढूंढने हमें आया।</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">&nbsp; &nbsp;गले लगाया ,चूमा है हमको</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">&nbsp; &nbsp;शरण में ले आया।</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">2. हम तो दलित थे हम तो पति थे,</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">&nbsp; &nbsp;डाली नजर हो नाथ।</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">&nbsp; &nbsp;ढाढ़स बदाया अंासू को पोंछा,</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">&nbsp; &nbsp;थामा हमारा हाथ।</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">3. दल-दल की कीच में हम तो पड़े थे,</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">&nbsp; &nbsp;तूने निकाला हमें ।</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">&nbsp; &nbsp;कलवरी खुन से हमें खरीदा,</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">&nbsp; &nbsp;अपना बनाया हमें।</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">4. हरदम हमारे साथ रहकर,</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">&nbsp; &nbsp;हमें सम्भालता है।</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">&nbsp; &nbsp;अटल प्रभु जो अनंत प्रेमी,</span><br style="background-color: white; color: #222222; font-size: 17.6px;" /><span face="Arial, Tahoma, Helvetica, FreeSans, sans-serif" style="background-color: white; color: #222222; font-size: 17.6px;">&nbsp; &nbsp;महिमा के योग्य है तू।</span></span>
         </h4>
     </div>
-<div class="song" id="song2">
+    <br id="song2">
+<div class="song">
     <h3>2. अपना बोझ प्रभु पर डाल</h3> <br>
     <h4>
         <ul class="lyric" style="box-sizing: border-box; color: #212529; font-size: 18px; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">अपना बोझ प्रभु पर डाल</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">कभी ना घबराना</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">तेरा आदर मान करेगा</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">आश्चर्यकर्म करेगा</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;"><br style="box-sizing: border-box;" /></span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">तारणहारा हमारी शरण</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">साये में लेकर चलता है</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">अपना बोझ...</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;"><br style="box-sizing: border-box;" /></span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">माता पिता यदि छोड़ देवें</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">वो तो गले से लगायेगा</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">अपना बोझ...</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;"><br style="box-sizing: border-box;" /></span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">पूरा समर्पण उसको करें</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">वो ही सबकुछ देखेगा</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;"><br style="box-sizing: border-box;" /></span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">बोझ प्रभु पर डाल दिया है</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">अब क्यों घबराना</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">वो ही आदर मान करेगा</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">आश्चर्यकर्म करेगा</span></li></ul>
     </h4>
 </div>
-<div class="song" id="song3">
+<br id="song3">
+<div class="song">
     <h3>3. अपनों को तो इस दुनिया में</h3> <br>
     <h4>
         <ul class="lyric" style="box-sizing: border-box; color: #212529; font-size: 18px; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><p class="font_8" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; color: black; margin: 0px; outline: 0px; padding: 0px; pointer-events: auto; vertical-align: baseline;"><span style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><span style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; font-weight: bold; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><span style="font-family: Poppins;">अपनों को तो इस दुनिया में, सब प्यार करते है,<br />दुश्मन को भी प्यार करना, मसीहा सिखाते हैं।</span></span></span></p><p class="font_8" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; color: black; margin: 0px; outline: 0px; padding: 0px; pointer-events: auto; vertical-align: baseline;"><span style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><span style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; font-weight: bold; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><span style="font-family: Poppins;">&nbsp;</span></span></span></p><p class="font_8" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; color: black; margin: 0px; outline: 0px; padding: 0px; pointer-events: auto; vertical-align: baseline;"><span style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><span style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; font-weight: bold; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><span style="font-family: Poppins;">1. एक गाल पर जो मारे तमाचा, दूजा गाल भी देना,<br />ले जाये कोई एक मील जबरन, दो मील तू साथ जाना,<br />अपनों को तो अपना सब कुछ सब लोग देते है,<br />गैरों पर भी सब कुछ लुटाना मसीहा सिखाते हैं।</span></span></span></p><p class="font_8" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; color: black; margin: 0px; outline: 0px; padding: 0px; pointer-events: auto; vertical-align: baseline;"><span style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><span style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; font-weight: bold; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><span style="font-family: Poppins;">​</span></span></span></p><p class="font_8" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; color: black; margin: 0px; outline: 0px; padding: 0px; pointer-events: auto; vertical-align: baseline;"><span style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><span style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; font-weight: bold; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><span style="font-family: Poppins;">2. अपनों से जैसा वैसा ही अपने, पड़ोसी से प्यार करो,<br />यीशु मरा तेरे पापों के खातिर, यह विश्वास करो,<br />अपनो पर तो लोग यहां पर ऐतबार करते है,<br />गैरों पर भी ऐतबार करना, मसीहा सिखाते हैं।</span></span></span></p><p class="font_8" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; color: black; margin: 0px; outline: 0px; padding: 0px; pointer-events: auto; vertical-align: baseline;"><span style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><span style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; font-weight: bold; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><span style="font-family: Poppins;">​</span></span></span></p><p class="font_8" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; color: black; margin: 0px; outline: 0px; padding: 0px; pointer-events: auto; vertical-align: baseline;"><span style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><span style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; font-weight: bold; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><span style="font-family: Poppins;">3. जो दे तुमको कांटे उसका दामन फूलों से भर दो,<br />यीशु ने तुमको माफ किया तुम भी सबको माफ कर दो,<br />अपनों को तो गुनाहों की माफी सब लोग देते है,<br />दुश्मन को भी माफ करना, मसीहा सिखाते है।।</span></span></span></p></li></ul>
     </h4>
 </div> 
-<div class="song" id="song4">
+<br id="song4">
+<div class="song" >
     <h3>4. अद्भुत है, अद्भुत है</h3> <br>
     <h4>
         <ul class="lyric" style="box-sizing: border-box; color: #212529; font-size: 18px; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><p class="font_8" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; color: black; margin: 0px; outline: 0px; padding: 0px; pointer-events: auto; vertical-align: baseline;"><span style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">अद्भुत है, अद्भुत है, अद्भुत है&nbsp;</span></span></p></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><p class="font_8" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; color: black; margin: 0px; outline: 0px; padding: 0px; pointer-events: auto; vertical-align: baseline;"><span style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">अद्भूत है, येशु अद्भुत है,</span></span></p></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">जीवन हमरा बना मधुर मय येशु अद्भुत है<br />आवो हम गौएंगे, ताली बाजयेंगे, आनंदित होके झुंमेंगे नाचेंगे</span></div><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">अद्भुत है, अद्भुत है, अद्भुत है अद्भूत है, येशु अद्भुत है,<b>&nbsp;&nbsp;</b></span></div><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">1. भले तकलीफे हम पर आये, दूर करणे वाला येशु अद्भुत है</span></div><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">अनेक दुखो से बचा ने वाला मेरा येशु अद्भुत है,</span></div><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">जगत पे उंचा नाम है, येशु मेरा प्रभू ओंका प्रभू है</span></div><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">अगर दिल से खोजो पावो गे दान तुम, येशु अद्भुत है<br />2. तुफानी पाणी पे चालने वाला, मेरा येशु अद्भुत है</span></div><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">जोशींली आधी को थमाणे वाला , मेरा येशु अद्भुत है</span></div><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">किलो से ठोका क्रूस पर, कुर्बान हुवा&nbsp;मेरे लिये येशु ऊस दिन</span></div><p class="font_8" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; color: black; margin: 0px; outline: 0px; padding: 0px; pointer-events: auto; vertical-align: baseline;"><span style="font-family: Poppins;"><span style="background-color: white; color: #3e3f3c; font-size: 14px;"></span></span></p><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">लेकिन तिसरे दिन जीवित हो उठा, मेरा येशु अद्भुत है,</span></div></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</b></span></div></li></ul>
     </h4>
 </div> 
-<br><br><br><br>
-<div class="song" id="song5">
+<br  id="song5">
+<div class="song">
     <h3>5. आदि और अन्त तू ही है</h3> <br>
     <h4><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">1. आदि और अन्त तू ही है,&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;अल्फ़ा और ओमेगा तू ही है,</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;दूतों की स्तुति तू ही है,&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;बुद्धि और सब ज्ञान तू ही है</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;यीशु तू महान है, महान है,</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;यीशु तू सच्चा है, सच्चा है,</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;यीशु तू ज़िन्दा है, ज़िन्दा है,</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;यीशु तू धन्य है, धन्य है</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;दूतों की स्तुति भी तू ही है,</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;बुद्धि और सब ज्ञान तू ही है,</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;राजाओं का राजा तू ही है,</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;प्रभुओं का प्रभु तू ही है</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">2. जीवन मेरा पापों से भरा,</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;&nbsp;जग अंधेरा और अशुद्ध सारा,</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;&nbsp;मेरे पापों से बचाने को,&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;&nbsp;मेरे लिए जीवन दिया है</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">3. सारे गुनाहगारों के लिए,&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;&nbsp;अपना खून बहाया उसने,</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;&nbsp;खाई कोड़ों की मार भी,&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;&nbsp;दी सलीब पर उसने अपनी जान</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">4. वायदा किया है तूने,&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;&nbsp;वायदा तू करता है पूरा,</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;&nbsp;वायदे के लिए आते हैं,</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;&nbsp;बरकतों की बारिश अब उंडेल</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">5. न्याय करने आनेवाला है,&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;&nbsp;न्याय के साथ राज करने को</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;&nbsp;धर्मियों को लेकर न्याय से,</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; color: #2f2e2e; font-family: Poppins,sans-serif; font-size: 12pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;">&nbsp;&nbsp;&nbsp;&nbsp;सिंहासन पर राज करेगा</span></p><p><span id="docs-internal-guid-4fbb961a-7fff-b886-3df2-4af1384277de"><br /></span></p>
     </h4>
 </div> 
-<br><br><br><br>
-<div class="song" id="song6">
+<br id="song6">
+<div class="song" >
     <h3>6. आज का दिन यहोवा ने बनाया है</h3> <br>
     <h4>
         <ul class="lyric" style="box-sizing: border-box; color: #212529; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><ul class="lyric" style="box-sizing: border-box; font-size: 18px; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp; &nbsp;आज का दिन यहोवा ने बनाया है,&nbsp;</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp; &nbsp;हम उसमें आनंदित हो आनंदित हों&nbsp;</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp; &nbsp;आज का दिन यहोवा ने बनाया है,&nbsp;</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp; &nbsp;हम उसमें आनंदित हो आनंदित हों&nbsp;</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp;</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">1.&nbsp; प्रभु को महिमा मिले,&nbsp;</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp; &nbsp; चाहे हो मेरा अपमान&nbsp;</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp; &nbsp; वो बढ़े मैं घटूँ,&nbsp;</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp; &nbsp; रहे उसी का ध्यान ...... 2)</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp;</span>&nbsp;</li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">2. स्तुति प्रशंसा करें,&nbsp;</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp; &nbsp; क्यों ना कुछ होता रहे&nbsp;</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp; &nbsp; उसको हम भाते रहें,</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp; &nbsp; चाहे जहाँ भी रहें ....... 2)</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp;</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">3. आता हूँ तेरे पास,&nbsp;</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp; &nbsp; मुझको है तुझसे आस&nbsp;</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp; &nbsp; मुझको कबूल कर ले,</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp; &nbsp; पापों से शुद्ध कर दे ...... 2)</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">&nbsp;</span></li></ul></li></ul>
     </h4>
 </div> 
-<br><br><br><br>
-<div class="song" id="song7">
+<br id="song7">
+<div class="song" >
     <h3>7. आखिरी नरसिंगा फूँका जानेवाला है</h3> <br>
     <h4>
         <ul class="lyric" style="box-sizing: border-box; color: #212529; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><ul class="lyric" style="box-sizing: border-box; font-size: 18px; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">आखिरी नरसिंगा फूँका जानेवाला है</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">तेरा मेरा सबका यीशु आनेवाला है</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">तू कहाँ होगा, तू कहाँ होगा</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;"><br style="box-sizing: border-box;" /></span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">पहले तो मसीह में मु्र्दे जी उठेंगे</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">बाकी जो हम ज़िंदा हैं बदल जायेंगे</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">पल भर में यह देखो</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">सबकुछ होनेवाला है</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">तू कहाँ होगा, तू कहाँ होगा</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;"><br style="box-sizing: border-box;" /></span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">तेरे दिल के सारे गम बढ़ते जायेंगे</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">बीत गये जो लम्हें तेरे</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">पास न आयेंगे</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">दुनिया में तू तन्हा ही</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">रह जानेवाला है</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">तू कहाँ होगा, तू कहाँ होगा</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;"><br style="box-sizing: border-box;" /></span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">तेरी दौलत, तेरी शौहरत काम न आयेगी</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">ये सब चीज़ें प्यारे</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">तेरे साथ न जायेंगी</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">सब चीज़ों का खात्मा</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">जल्दी होनेवाला है</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">तू कहाँ होगा, तू कहाँ होगा</span></li></ul></li></ul>
     </h4>
 </div> 
-<br><br><br><br>
-<div class="song" id="song9">
+<br id="song9">
+<div class="song" >
     <h3>9. आराधना आराधना स्तुति</h3> <br>
     <h4>
         <p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"><span face="Poppins,sans-serif" style="background-color: white; color: #3f3a46; font-family: Poppins; font-style: normal; font-variant: normal; font-weight: 600; text-decoration: none; vertical-align: baseline; white-space: pre;">आराधना आराधना स्तुति</span></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"><span face="Poppins,sans-serif" style="background-color: white; color: #3f3a46; font-family: Poppins; font-style: normal; font-variant: normal; font-weight: 600; text-decoration: none; vertical-align: baseline; white-space: pre;">आराधना , आराधना ….. 2)</span></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"><span face="Poppins,sans-serif" style="background-color: white; color: #3f3a46; font-family: Poppins; font-style: normal; font-variant: normal; font-weight: 600; text-decoration: none; vertical-align: baseline; white-space: pre;">सुबह के समय , शाम के समय</span></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"><span face="Poppins,sans-serif" style="background-color: white; color: #3f3a46; font-family: Poppins; font-style: normal; font-variant: normal; font-weight: 600; text-decoration: none; vertical-align: baseline; white-space: pre;">आराधना प्रभु यीशु को ……. 2)</span></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"><b id="docs-internal-guid-2f96c79f-7fff-6e2b-cc84-a53c451a719b" style="font-weight: normal;"><span style="font-family: Poppins;"><br /></span></b></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"><span face="Poppins,sans-serif" style="background-color: white; color: #3f3a46; font-family: Poppins; font-style: normal; font-variant: normal; font-weight: 600; text-decoration: none; vertical-align: baseline; white-space: pre;">१. पवित्रात्मा तुझे आराधना</span></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"><span face="Poppins,sans-serif" style="background-color: white; color: #3f3a46; font-family: Poppins; font-style: normal; font-variant: normal; font-weight: 600; text-decoration: none; vertical-align: baseline; white-space: pre;">&nbsp;&nbsp;&nbsp;मेरे साथी तुझे आराधना …… 2)</span></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"><span face="Poppins,sans-serif" style="background-color: white; color: #3f3a46; font-family: Poppins; font-style: normal; font-variant: normal; font-weight: 600; text-decoration: none; vertical-align: baseline; white-space: pre;">&nbsp;&nbsp;&nbsp;स्वर्गीय पिता तुझे आराधना</span></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"><span face="Poppins,sans-serif" style="background-color: white; color: #3f3a46; font-family: Poppins; font-style: normal; font-variant: normal; font-weight: 600; text-decoration: none; vertical-align: baseline; white-space: pre;">&nbsp;&nbsp;&nbsp;मार्गदर्शी तुझे आराधना …… 2)</span></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"><b style="font-weight: normal;"><span style="font-family: Poppins;"><br /></span></b></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"><span face="Poppins,sans-serif" style="background-color: white; color: #3f3a46; font-family: Poppins; font-style: normal; font-variant: normal; font-weight: 600; text-decoration: none; vertical-align: baseline; white-space: pre;">२. जीवित पवित्र तुझे आराधना</span></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"><span face="Poppins,sans-serif" style="background-color: white; color: #3f3a46; font-family: Poppins; font-style: normal; font-variant: normal; font-weight: 600; text-decoration: none; vertical-align: baseline; white-space: pre;">&nbsp;&nbsp;&nbsp;&nbsp;जीवन जल तुझे आराधना …… 2)</span></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"><span face="Poppins,sans-serif" style="background-color: white; color: #3f3a46; font-family: Poppins; font-style: normal; font-variant: normal; font-weight: 600; text-decoration: none; vertical-align: baseline; white-space: pre;">&nbsp;&nbsp;&nbsp;&nbsp;बादल के खंभे तुझे आराधना</span></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"><span face="Poppins,sans-serif" style="background-color: white; color: #3f3a46; font-family: Poppins; font-style: normal; font-variant: normal; font-weight: 600; text-decoration: none; vertical-align: baseline; white-space: pre;">&nbsp;&nbsp;&nbsp;&nbsp;मेरे मसीह तुझे आराधना …… 2)</span></p><p style="height: 0px; text-align: left;"><span face="Poppins,sans-serif" style="background-color: white; color: #3f3a46; font-family: Poppins; font-style: normal; font-variant: normal; font-weight: 600; text-decoration: none; vertical-align: baseline; white-space: pre;"><br /></span><br /></p></h4>
 </div> 
-<br><br><br><br>
-<div class="song" id="song10">
+<br id="song10">
+<div class="song" >
     <h3>10. आराधना मे है छुटकारा</h3> <br>
     <h4>
         <span id="docs-internal-guid-6807d3ad-7fff-d929-f55f-05cedb825ca7"><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">आराधना मे है छुटकारा</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">आराधना मे है चंगाई…. 2)</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">शरीर प्राण आत्मा मे&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">शांति आनंद देता है&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">जान से प्यारा प्रभु …. 2)</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 600; vertical-align: baseline; white-space: pre-wrap;">&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">प्रार्थना करे आराधना करे</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">वो अच्छा है कितना भला है …. 2)</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">छुटकारा पाए हमेशा …. 2)</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 600; vertical-align: baseline; white-space: pre-wrap;">&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">1. मांगोगे तो मिलेगा,&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">   ढून्दोगे तो पाओगे …. 2)</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">   खटखटाओ खुलेंगी</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">   स्वर्ग की आशिषे</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">   पाओ तुम उसे अभी …. 2)</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 600; vertical-align: baseline; white-space: pre-wrap;">&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">2. प्रार्थना करो निरंतर,&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">   प्रार्थना करो विश्वास से …. 2)</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">   धर्मी जन की प्रार्थना</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">   विश्वास की प्रार्थना</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="color: #222222; font-family: Poppins, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space: pre-wrap;">   खोलती है सारे बंधन …. 2) </span></p><br /><br /></span>
     </h4>
 </div> 
-<br><br><br><br>
-<div class="song" id="song11">
+<br id="song11">
+<div class="song">
     <h3>11. आराधना हो आराधना</h3> <br>
     <h4>
         <ul class="lyric" style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><ul class="lyric" style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><ul class="lyric" style="box-sizing: border-box; color: #212529; font-size: 18px; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">आराधना हो आराधना</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">खुदावंद यीशु की आराधना</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;"><br style="box-sizing: border-box;" /></span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">पवित्र दिल से आराधना</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">प्रेमी मन से आराधना</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;"><br style="box-sizing: border-box;" /></span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">शांतिदाता की आराधना</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">मुक्तिदाता की आराधना</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;"><br style="box-sizing: border-box;" /></span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">मेरे मसीहा की आराधना</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">जीवनदाता की आराधना</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;"><br style="box-sizing: border-box;" /></span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">दूतों के संग संग आराधना</span></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><span style="font-family: Poppins;">स्तुति प्रशंसा आराधना</span></li></ul></li></ul></li></ul>
     </h4>
 </div> 
-<br><br><br><br>
-<div class="song" id="song12">
+<br id="song12">
+<div class="song" >
     <h3>12. आसमान के नीचे</h3> <br>
     <h4>
         <ul class="lyric" style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><ul class="lyric" style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><p style="background: white;"></p><p style="background: white;"><strong><span lang="HI" style="color: black; font-family: Poppins; font-size: 10.5pt;">आसमान के नीचे</span></strong><strong><span style="color: black; font-family: Poppins; font-size: 10.5pt;">, <span lang="HI">और
@@ -313,8 +532,8 @@
             <p class="MsoNormal"><span style="font-family: Poppins;"><o:p>&nbsp;</o:p></span></p><br /><p></p></li></ul></li></ul>
     </h4>
 </div> 
-<br><br><br><br>
-<div class="song" id="song13">
+<br id="song13">
+<div class="song" >
     <h3>13. आत्मा से भरदे मुझे</h3> <br>
     <h4>
         <ul class="lyric" style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><ul class="lyric" style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><p style="background: white;"></p><p class="MsoNormal" style="line-height: 115%;"><b><span lang="HI" style="background: white; color: #444444; font-family: Poppins; font-size: 10.5pt; line-height: 115%; mso-bidi-language: HI;">आत्मा से भरदे मुझे</span></b><b><span style="color: #444444; font-family: Poppins; font-size: 10.5pt; line-height: 115%;"><br />
@@ -341,8 +560,8 @@
         </span></b><b><span style="background: white; color: #444444; font-family: Poppins; font-size: 10.5pt; line-height: 115%; mso-bidi-language: HI;">&nbsp;&nbsp;&nbsp;&nbsp; <span lang="HI">जहाँ भी मैं जाऊँ ....</span></span></b><b><span style="background: white; color: #444444; font-family: Poppins; font-size: 10.5pt; line-height: 115%;">.</span></b><b><span style="font-family: Poppins;"><o:p></o:p></span></b></p><p></p></li></ul></li></ul>
     </h4>
 </div> 
-<br><br><br><br>
-<div class="song" id="song14">
+<br id="song14">
+<div class="song" >
     <h3>14. आत्मा मंडराता </h3> <br>
     <h4>
         <ul class="lyric" style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><ul class="lyric" style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><p style="background: white;"></p><p class="has-text-align-center" style="background: white; margin-top: 15.0pt;"><b><span lang="HI" style="color: #444444; font-family: Poppins; font-size: 10.0pt;">आत्मा
@@ -365,8 +584,8 @@
             </p><p class="MsoNormal" style="line-height: 115%;"><b><span style="font-family: Poppins; font-size: 10.0pt; line-height: 115%;">&nbsp;</span></b></p><p></p></li></ul></li></ul>
     </h4>
 </div> 
-<br><br><br><br>
-<div class="song" id="song15">
+<br id="song15">
+<div class="song" >
     <h3>15. आवाज़ उठायेंगे, हम साज़ बजायेंगे, </h3> <br>
     <h4>
         <ul class="lyric" style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><ul class="lyric" style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><p style="background: white;"></p><p class="MsoNormal" style="line-height: normal; margin-bottom: 0cm; margin-left: 18.0pt; margin-right: 0cm; margin-top: 0cm;"><b><span lang="HI" style="color: #212529; font-family: Poppins; font-size: 10.0pt; mso-bidi-language: HI; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-fareast-language: EN-IN;">आवाज़ उठायेंगे</span></b><b><span style="color: #212529; font-family: Poppins; font-size: 10.0pt; mso-bidi-language: HI; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-fareast-language: EN-IN;">, <span lang="HI">हम
@@ -378,14 +597,914 @@
             </p><p class="MsoNormal" style="line-height: 115%;"><b><span style="font-family: Poppins; font-size: 10.0pt; line-height: 115%;">&nbsp;</span></b></p><p></p></li></ul></li></ul>
     </h4>
 </div> 
-<br><br><br><br>
-<div class="song" id="song2">
-    <h3>3. अपनों को तो इस दुनिया में</h3> <br>
+<br  id="song16">
+<div class="song">
+    <h3>16. आये है हम तेरे चरणों मे</h3> <br>
     <h4>
-        <ul class="lyric" style="box-sizing: border-box; color: #212529; font-size: 18px; list-style: none; margin: 0px; padding: 0px;"><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><p class="font_8" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; color: black; margin: 0px; outline: 0px; padding: 0px; pointer-events: auto; vertical-align: baseline;"><span style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">अद्भुत है, अद्भुत है, अद्भुत है&nbsp;</span></span></p></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><p class="font_8" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; color: black; margin: 0px; outline: 0px; padding: 0px; pointer-events: auto; vertical-align: baseline;"><span style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">अद्भूत है, येशु अद्भुत है,</span></span></p></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">जीवन हमरा बना मधुर मय येशु अद्भुत है<br />आवो हम गौएंगे, ताली बाजयेंगे, आनंदित होके झुंमेंगे नाचेंगे</span></div><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">अद्भुत है, अद्भुत है, अद्भुत है अद्भूत है, येशु अद्भुत है,<b>&nbsp;&nbsp;</b></span></div><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">1. भले तकलीफे हम पर आये, दूर करणे वाला येशु अद्भुत है</span></div><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">अनेक दुखो से बचा ने वाला मेरा येशु अद्भुत है,</span></div><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">जगत पे उंचा नाम है, येशु मेरा प्रभू ओंका प्रभू है</span></div><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">अगर दिल से खोजो पावो गे दान तुम, येशु अद्भुत है<br />2. तुफानी पाणी पे चालने वाला, मेरा येशु अद्भुत है</span></div><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">जोशींली आधी को थमाणे वाला , मेरा येशु अद्भुत है</span></div><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">किलो से ठोका क्रूस पर, कुर्बान हुवा&nbsp;मेरे लिये येशु ऊस दिन</span></div><p class="font_8" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; border: 0px; color: black; margin: 0px; outline: 0px; padding: 0px; pointer-events: auto; vertical-align: baseline;"><span style="font-family: Poppins;"><span style="background-color: white; color: #3e3f3c; font-size: 14px;"></span></span></p><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;">लेकिन तिसरे दिन जीवित हो उठा, मेरा येशु अद्भुत है,</span></div></li><li style="box-sizing: border-box; list-style: none; margin: 0px; padding: 0px;"><div style="background-color: white; color: #3e3f3c; font-size: 14px;"><span style="font-family: Poppins;"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</b></span></div></li></ul>
+        <ul>आये है हम तेरे चरणों मे <br>
+            लेकर हम स्तुति <br>
+            हाल्लेलुयाह .... <br><br>
+             
+            1. प्यारे मसीह आशीष दे हमे <br>
+            आत्मा से तू भर दे हमे <br>
+            हाल्लेलुयाह .... <br><br>
+             
+            2. हम बच्चे है परमपिता के <br>
+            बढ़ना है हमे वचनों मे <br>
+            हाल्लेलुयाह .... <br><br>
+             
+            3. मिलती है हमे तुझ से चंगाईया <br>
+            देता तू हमे पापो से मुक्ति <br>
+            हाल्लेलुयाह .... <br></ul>
     </h4>
 </div> 
-<br><br><br><br>
+<br id="song17">
+<div class="song" >
+    <h3>17. आओ हम यहोवा का धन्यवाद करें</h3> <br>
+    <h4>
+        <ul>आओ हम यहोवा का धन्यवाद करें, <br>
+            अपने सारे हृदय से वंदना करें, <br>
+            उसके फाटकों में स्तुति करें, और ललकारें<br><br>
+             
+            1. जिसने बनाया हमें, <br>
+            वह है हमारा आधार <br>
+            जिसने बचाया हमें,<br>
+            वह है हमारा उद्धार, <br>
+
+उसकी हो जय जय हो आराधना,<br>
+
+वह है सभों का प्रधान<br>
+
+आओ….<br><br>
+
+ 
+
+2. अपने सारे तन मन से हम,<br>
+
+उसकी महिमा करें,<br>
+
+वे हैं शिफ़ा और नजात,<br>
+
+उसकी प्रशंसा करें,<br>
+
+वह है जग का दाता और तारणहारा,<br>
+
+उसकी हो जय जय सदा<br>
+
+आओ….</ul>
+    </h4>
+</div> 
+<br id="song18">
+<div class="song" >
+    <h3>18. आत्मा प्रभु का प्रेमी आत्मा</h3> <br>
+    <h4>
+        <ul>आत्मा प्रभु का प्रेमी आत्मा प्रभु का <br>
+            अभी तू आजा हमारे बीच में<br>
+            अपनी आशीष उंडेल.... 2)<br><br>
+            
+           1. दलदल के कीच में से,<br>
+            दया से निकाल हमें..... 2)<br>
+            पाप हटाकर साफ कर दे<br>
+            अपनी सामर्थ से.... 2)<br><br>
+            
+           2. प्रभु के सीने में मैं,<br>
+            सिर रखके आराम पाऊँ.... 2)<br>
+            प्यासा हूँ मैं तेरे प्रति<br>
+            प्यास दिला मुझे और.... 2)<br><br>
+            
+           3. आत्मा के वरदानों से,<br>
+            तृप्त कर तू मुझे.... 2)<br>
+            जाग उठू मैं जलने पाऊँ<br>
+            ज्योति चमका मुझमें.... 2)<br><br>
+            
+           4.जीवन दिया तू ने,<br>
+            जीवन दिलाया मैं भी.... 2)<br>
+            जीवन जल की नदियां मुझसे<br>
+            बहने पाये जग में.... 2)<br><br></ul>
+    </h4>
+</div> 
+<br id="song19">
+<div class="song" >
+    <h3>19. आसमानी खुशी से भर दे मुझको</h3> <br>
+    <h4>
+        <ul>आसमानी खुशी से भर दे मुझको <br>
+
+            गीत नया दिल में ला<br>
+            उतार आ उतार आ ए रूहे पाक उतार आ… <br><br>
+            अमृत जल प्रभु मुझको पीला दे<br>
+            दिल मेरे की, प्यास बुझा दे<br>
+            चश्मा बन के उच्छल आ .... 2) <br>
+            उतार आ…. <br><br>
+            आसमानी रोटी, मुझको खिला दे<br>
+            कमज़ोर दिल को, तगड़ा बना दे<br>
+            भरपूर कर के राजा .... 2) <br>
+            उतार आ…. <br><br>
+            पाक रूह आ मेरे, दिल के अंदर<br>
+            बन जाओं मैं, तेरा मंदिर<br>
+            अपनी राह दिखा .... 2) <br>
+            उतार आ…<br></ul>
+    </h4>
+</div> 
+<br id="song20">
+<div class="song" >
+    <h3>20. अम्बर भी नया</h3> <br>
+    <h4>
+        <ul>अम्बर भी नया, धरती भी नई और <br>
+            नया येरूशलेम होगा <br>
+            हर सुबह नई हर शाम नई <br>
+            हर वक़्त सुहाना होगा <br>
+            सुन्दर सा नगर एक होगा .... 2) <br> <br>
+            
+            1. अंधे की आँख खुलेगी, <br>
+            बहरे का कान खुलेगा .... 2)<br>
+            दौडेगा जोर से लंगडा,<br> गूंगा महिमा गाएगा.... 2) <br>
+            कोई कष्ट नहीं, आंसू भी नहीं <br>
+            बस प्यार हे प्यार होगा ....हर सबह नई <br> <br>
+
+            2. सूरज भी न डूबेगा, <br> चाँद भी न सोयेगा .... 2) <br>
+            कभी अँधेरा न होगा,<br> और पाप का नाम न होगा .... 2)<br>
+            वहा मौत नहीं बीमारी नहीं <br>
+            कभी किसी का अंत न होगा ....हर सुबह नई <br><br></ul>
+    </h4>
+</div> 
+<br id="song21">
+<div class="song" >
+    <h3>21. ओ आकाश सूर्य चन्द्रमा</h3> <br>
+    <h4>
+        <ul>ओ आकाश सूर्य चन्द्रमा,<br> स्तुति करो सारा भूमण्डल, <br><br>
+
+            1.  यीशु ने तुझसे पे्रम किया,<br> तेरे लिए अपना प्राण दिया .... 2) <br>
+             नरक से आत्मा को बचा लिया, <br> अनन्त जीवन सबको दिया .... 2)<br><br>
+            
+            2.  अनुग्रह कारी प्रिय यीशु,<br> धर्मी होकर वह दुख सहा, .... 2)<br>
+             हरा दिया बैरी शैतान को, <br> मृत्यु पर यीशु विजयी हुआ .... 2)<br><br>
+            
+            3.  दूतों ने सुनाया सुसमाचार, <br> यीशु जी उठा है जरूर .... 2)<br>
+             जाके बताओ यह सुसमाचार, <br> बाजे बजाते गाते जय-जयकार .... 2)</ul>
+    </h4>
+</div> 
+<br id="song22">
+<div class="song" >
+    <h3>22. आँखो को बंद करलूँ</h3> <br>
+    <h4>
+        <ul>आँखो को बंद करलूँ। <br>
+            यीशु तुझे जाने न दूँ (2)<br>
+            आँखो को बंद करलूँ करलूँ<br>
+            आँखो को बंद करलूँ (2)<br>
+            हालेलुयाह (2)<br><br>
+
+            साँसो में मेरी साँसे हे तेरी<br>
+            तू ही बसा है आँखों में मेरी<br>
+            आँखों को बंद करलूँ<br>
+            यीशु तुझे जाने न दूँ<br><br>
+            
+            पलकों के दरवाजे से मैं<br>
+            ले लूँ दिल के अंदर<br>
+            दिल ये मेरा यीशु जी तेरी ही तो मन्दिर<br>
+            अपने हर कण कण में,<br>
+            दिल की हर धड़कन में (2)<br>
+            तेरी धड़कन मैं रख लूँ<br>
+            यीशु तुझे जाने न दूँ।<br><br>
+            
+            तू ही मेरा मीत है,<br>
+            तू ही है संगीत<br>
+            तू ही मेरी जीत है और<br>
+            तू ही मन का मीत<br>
+            अपने हर गीत में<br>
+            उसके संगीत में<br>
+            तेरा संगीत भर दूँ,<br>
+            यीशु तुझे जाने न दूँ।<br><br>
+            
+            दिल की चाहत यही तमन्ना,<br>
+            बस एक आरखज़ू<br>
+            मेरे दिल की बस्ती में<br>
+            अब दिखे तू ही बस तू<br>
+            देखूँ अब मैं जिधर<br>
+            पाऊँ तुझे उधर<br>
+            बस अब में हूँ और एक तू,<br>
+            यीशु तुझे जाने न दूँ।<br></ul>
+    </h4>
+</div> 
+<br id="song23">
+<div class="song" >
+    <h3>23. आशीष तुझसे चाहते हैं</h3> <br>
+    <h4>
+        <ul>आशीष तुझसे चाहते हैं, <br>
+            हे स्वर्गीय पिता हम आते हैं <br> <br>
+            
+            1. कोई खूबी है ना लियाकत, <br>
+            बक्शो हम को अपनी ताकत <br>
+            खाली दिलों को लाते हैं - 2 <br>
+            हे स्वर्गीय पिता हम आते हैं, <br> <br>
+            
+            2. हमनें बहुत खताएं की हैं, <br>
+            रहे निकम्मे ज़फ़ाएं की हैं <br>
+            शर्म से सिर झुक जाते हैं, <br>
+            हे स्वर्गीय पिता हम आते हैं <br> <br>
+            
+            3. तुम हो शक्तिमान, प्रभुजी <br>
+            कुदरत तुम्हारी शान यीशु जी <br>
+            हम्द-ओ-सना हम गाते हैं -2 <br>
+            हे स्वर्गीय पिता हम आते हैं <br> <br>
+            
+            4. बंदे को तू कभी ना भूले <br>
+            दुःख सहे दुनिया में तूने <br>
+            उसी प्यार को चाहते हैं -2 <br>
+            हे स्वर्गीय पिता हम आते हैं, <br>
+            </ul>
+    </h4>
+</div>
+<br id="song24">
+<div class="song" >
+    <h3>24. आओ करे आराधना</h3> <br>
+    <h4>
+        <ul>आओ करे आराधना <br>
+            येशु मसीह की आराधना (2)<br>
+            जो है मेरा खुदा<br>
+            वह है सबका खुदा<br>
+            हाल्लेलुयाह (4)<br><br>
+            
+            सृष्टि को रचने वाला वह ही है<br>
+            हम सबका रखवाला वह ही है<br>
+            उस की महिमा करे .... (4)<br>
+            हाल्लेलुयाह .... (4)<br><br>
+            
+            चाहे ज़मीन हो या आसमान<br>
+            कोई नहीं है उसके समान<br>
+            वह है जिंदा खुदा .... (4)<br>
+            हाल्लेलुयाह .... (4)<br><br>
+            
+            उस के लह से मिलती शिफा<br>
+            पापों से सबको मिलती क्षमा<br>
+            मिलता है जीवन नया ....(4)<br>
+            हाल्लेलुयाह .... (4)<br></ul>
+    </h4>
+</div> 
+
+<br  id="song25">
+<div class="song">
+    <h3>25. उधार है, चँगाई है</h3> <br>
+    <h4>
+        <ul>उधार है, चँगाई है, रिहाई है, येशू नाम <br>
+            हो येशू नाम, हो येशू नाम <br>
+
+येशू नाम, येशू नाम <br>
+येशू नाम, येशू नाम <br> <br>
+
+1. मुक्ति भी है, शक्ति भी है <br>
+भक्ति भी है येशू नाम .... 2)<br>
+हो येशू नाम, हो येशू नाम <br> <br>
+
+2. मीठा वो नाम, अक्चा वो नाम <br>
+सक्चा वो नाम येशू नाम .... 2) <br>
+हो येशू नाम, हो येशू नाम <br> <br></ul>
+    </h4>
+</div> 
+
+<br  id="song26">
+<div class="song">
+    <h3>26. उसने दाखरस और तेल उंडेला</h3> <br>
+    <h4>
+        <ul>उसने दाखरस और तेल उंडेला <br>
+            मेरी आत्मा को चंगा किया <br>
+            यरीहो के किनारे अधमुँहा पड़ा .... 2) <br>
+            उसने दाखरस और तेल उंडेला <br> <br>
+            यीशु यीशु यीशु <br>
+            मैंने तुझको पा लिया <br> <br>
+            यीशु यीशु यीशु <br>
+            मैंने तुझको पा लिया <br> <br>
+            यीशु यीशु यीशु <br>
+            मैंने तुझको पा लिया <br>
+            मैंने यीशु को पा लिया<br></ul>
+    </h4>
+</div> 
+
+<br  id="song27">
+<div class="song">
+    <h3>27. उसके फाटकों में प्रवेश करूँगा</h3> <br>
+    <h4>
+        <ul>
+            उसके फाटकों में प्रवेश करूँगा <br>
+            धन्यवाद के साथ <br>
+            उसके आंगनों में स्तुति करूँगा <br>
+            मै कहूँगा ये दिन यहोवा ने बनाया <br>
+            मै खुश हुआ की आनंदित किया <br>
+            आनंदित किया मुझे आनंदित किया <br>
+            मै खुश हुआ की आनंदित किया .... 2)<br></ul>
+    </h4>
+</div> 
+
+<br  id="song28">
+<div class="song">
+    <h3>28. ए मेरे दिल क्यों है उदास</h3> <br>
+    <h4>
+        <ul>ए मेरे दिल क्यों है उदास <br>
+            रखले तु यीशु पे आस <br>
+            बन जा तु उसके लिए <br>
+            रहता है वो तेरे साथ <br> <br>
+            
+            कोई नही है जहा मे मेरा <br>
+            फिरता रहा है युही अकेला .... 2) <br>
+            आशा की ज्योती जला दे <br>
+            जीवन को अपने सजा ले .... 2)<br>
+            ये मेरे दिल… <br> <br>
+            
+            पल दो पल की ये जिंदगानी <br>
+            क्या जाने फीर क्या है कहानी .... 2)<br>
+            सांसो के रुकने के पहले <br>
+            यीशु को अपना बना ले .... 2)<br>
+            ये मेरे दिल…..<br></ul>
+    </h4>
+</div> 
+
+<br  id="song29">
+<div class="song">
+    <h3>29. ए मसीह तेरे बिना जिंदगी मे</h3> <br>
+    <h4>
+        <ul>ए मसीह तेरे बिना जिंदगी मे <br>
+            है ना कोई खुशी .... 2) <br><br>
+            
+            तू आ मेरे दिल मे समा जा<br>
+            तेरे बिना जिंदगी है सुनी सुनी<br> <br>
+            
+            आए मसीह…… <br><br>
+            
+            1. गम का बदल का, छाया अंधेरा था <br>
+            तूने आकर मूज़े, जीवन डीप दिया .... 2) <br><br>
+            
+            
+            2. आए मसीह तूने कृष पर जान अपनी दी <br>
+            ताकि इसमे मिले मुझको नयी जिंदगी .... 2) <br><br>
+            </ul>
+    </h4>
+</div> 
+
+<br  id="song30">
+<div class="song">
+    <h3>30. एक नाम है येशु </h3> <br>
+    <h4>
+        <ul>एक नाम है येशु <br>
+            येशु ही वोह नाम है .... 2)<br><br>
+            
+            1. अंधों को आँखें मिल जाये <br>
+            येशु ही वोह नाम है  <br>
+            लंगड़ों को भी वही चलाये  <br>
+            येशु ही वोह नाम है  <br>
+            गूंगे को बोली मिल जाये  <br> 
+            येशु ही वोह नाम है  <br>
+            मुर्दों को भी वही जिलाये  <br>
+            येशु ही वोह नाम है  <br> <br>
+            
+            एक नाम सबसे महान  <br>
+            बन बिगड़े सब काम  <br> <br>
+            
+            2. बांझ को बच्चे मिल जाए  <br>
+            येशु ही वोह नाम है  <br>
+            अनाथ का वो घर बसाये  <br>
+            येशु ही वोह नाम है  <br>
+            खोयी हुई पेहचान लौटाए  <br>
+            येशु ही वोह नाम है  <br>
+            रोते हूँवो को वही हसाये  <br>
+            येशु ही वोह नाम है  <br> <br>
+            
+            एक नाम सबसे महान  <br>
+            बन बिगड़े सब काम  <br> <br>
+            
+            3. निर्बल को बलवान बनाये  <br>
+            येशु ही वोह नाम है  <br>
+            दुष्ट गाडों को वही गिराए  <br>
+            येशु ही वोह नाम है  <br>
+            दुश्मन को भी माफ़ कराये  <br>
+            येशु ही वोह नाम है  <br>
+            रूठे रिश्तें सही हो जाए  <br>
+            येशु ही वोह नाम है  <br> <br>
+            
+            एक नाम सबसे महान  <br>
+            बन बिगड़े सब काम  <br> <br></ul>
+    </h4>
+</div> 
+<br  id="song31">
+<div class="song">
+    <h3>31. कभी भी येशु न छोड़ेगा</h3> <br>
+    <h4>
+        <ul>कभी भी येशु न छोड़ेगा <br>
+            कभी भी येशु न त्यागेगा <br>
+            कभी भी येशु के लोग <br>
+            लज्जित नहीं होंगे .... 2)<br> <br>
+            
+            जन्म देने वाली माता भूल सकती है <br>
+            अपने सगे लोग हमें छोड़ सकते हैं .... 2)<br>
+            मैं तो जगत के अंत तक सदा <br>
+            तेरे साथ रहूँगा येशु ने कहा .... 2) <br> <br>
+            
+            “अपनी हथेली पे चेहरा तेरा <br>
+            मैंने खोद रखा है कभी न भोलूँगा .... 2)<br>
+            अपनी आँखों की पुतली सामान <br>
+            रखता हूँ मैं तेरा पूरा ध्यान .... 2)<br></ul>
+    </h4>
+</div> 
+<br  id="song32">
+<div class="song">
+    <h3>32. कोई भी छो मुझे</h3> <br>
+    <h4>
+        <ul>कोई भी छोड़ेगा मुझे, <br>
+            यीशु कभी ना छोड़ेगा। <br>
+            कभी न छोड़ेगा, कभी न छोड़ेगा .... 2) <br>
+            यीशु कभी भी नहीं छोड़ेगा। <br> <br>
+            
+            1. माता वही है, पिता वही है .... 2) <br>
+            अपने गले लगायेगा .... 2) <br> <br>
+            
+            2. दुःख और तकलीफ जब आयेगा .... 2) <br>
+            बिनती करुगा मैं, रक्षा करेंगा वह .... 2) <br> <br>
+            
+            3. मेरे लिये, इन्सान बना .... 2) <br>
+            मेरे लिये दुःख भी सहा .... 2) <br> <br>
+            
+            अिभषेक किया, आत्मा से .... 2) <br>
+            वचन से मुझे चलाता है वह .... 2)<br> <br></ul>
+    </h4>
+</div> 
+<br  id="song33">
+<div class="song">
+    <h3>33. करते हैं तेरी हम स्तुति</h3> <br>
+    <h4>
+        <ul>करते हैं तेरी हम स्तुति <br>
+            हदय की गहराइयों से .... 2) <br>
+            यीशु तू ही हैँ <br>
+            तू ही है हमारा प्रभु .... 2) <br> <br>
+             
+            महिमा हो तेरी <br>
+            महिमा हो तेरी <br>
+            यीशु तू ही हैँ <br>
+            तू ही है हमारा प्रभु <br>
+            यीशु तू ही हैँ <br>
+            तू ही है हमारा प्रभु <br> <br>
+             
+            1. आत्मा और सच्चाइयों से <br>
+            तेरी आराधना करेगे <br>
+            ऊँचा और सबसे ऊँचा रहे तेरा नाम .... 2) <br>
+            महिमा हो तेरी <br>
+            महिमा हो तेरी .... 2) <br>
+            यीशु तू ही हैँ <br>
+            तू ही है हमारा प्रभु .... 2)<br></ul>
+    </h4>
+</div> 
+<br  id="song34">
+<div class="song">
+    <h3>34. कितना भलाई मुझ पर किया </h3> <br>
+    <h4>
+        <ul>कितना भलाई मुझ पर किया <br>
+            कैसे मैं धन्य कहूँ, प्रभु कैसे में धन्य कहूँ <br>
+            धन्य राजा, धन्य राजा <br>
+            धन्यवाद हो, सदा तेरी। .... 2) <br><br>
+            
+           1. हाथों में थामकर पुतली की नाई <br>
+            रात दिन रक्षा किया .... 2) <br> <br>
+            
+           2. दीनता में पड़ा था, दया करके याद किया  <br>
+            तेरी स्तुति करूँगा .... 2) <br> <br>
+            
+           3. पापों में परा था, कुछ भी आशा न था <br>
+            बचा लिया अनुग्रह से .... 2) <br> <br>
+            
+            4. जो कुछ तूने, किया मेरे लिए <br>
+            कैसे मै वर्णन करूँ .... 2) <br></ul>
+    </h4>
+</div> 
+<br  id="song35">
+<div class="song">
+    <h3>35. कोई नहीं है आदार के योग्य</h3> <br>
+    <h4>
+        <ul>कोई नहीं है आदार के योग्य <br>
+            बस एक तू खुदा <br>
+            कोई नहीं है सिघासन के योग्य <br>
+            बस एक तू राजा <br> <br>
+            
+            सारा आदर,सारी महिमा <br>
+            तुझको मिले येशु .... 2) <br> <br>
+            
+            कोई नहीं है महिमा के योग्य <br>
+            बस एक तू यहोवा <br>
+            कोई नहीं है बेदाग पवित्र <br>
+            बस एक तू मसीहा <br> <br>
+            
+            सारा आदर,सारी महिमा <br>
+            तुझको मिले येशु .... 2) <br> <br>
+            
+            नाम येशु का उंचा .... 3) <br>
+            नाम येशु <br> <br>
+            
+            तेरे नाम में है चंगाई <br>
+            तेरे नाम में है रिहाई <br>
+            तेरे नाम में है भलाई <br>
+            येशुआ .... 2) <br></ul>
+    </h4>
+</div> 
+<br  id="song36">
+<div class="song">
+    <h3>36. क्रूस पर, क्रूस पर</h3> <br>
+    <h4>
+        <ul>क्रूस पर, क्रूस पर, है ये कौन लहू लुहान <br>
+            मेरा स्वामी, मेरा नाथ, मेरे खातिर देता जान <br>
+            मेरा स्वामी, मेरा नाथ, मेरे खातिर देता जान <br> <br>
+           
+           1. इस महान प्यार को, मैंने ठुकरा दिया <br>
+              इस महापाप को, हे प्रभु कर क्षमा <br> <br>
+           
+           2. पाप से करने प्यार, जाऊँगा अब मैं क्या?  <br>
+              तेरी सन्तान मैं बना, मैं प्रभु जीऊँगा <br> <br>
+           
+           3. आये क्लेश कितने भी, हानि हो हर कही <br>
+              क्रूस के, प्रेम को, भूलूँगा मैं नहीं।<br> <br></ul>
+    </h4>
+</div> 
+<br  id="song37">
+<div class="song">
+    <h3>37. खुशी, खुशी मनाओ</h3> <br>
+    <h4>
+        <ul>खुशी, खुशी मनाओ .... 2) <br>
+            बोलो, बोलो मसीहा की जय-जय-जय .... 2) <br> <br>
+            
+             मेरे लिए आया, मेरे लिया जीया .... 2) <br>
+             मेरे लिए यीशु ने दुःख उठाया .... 2) <br>
+             मेरे लिए मारा गया, मेरे लिए गाड़ा गया .... 2) <br>
+             मेरे लिए फिर जी उठा, मेरा है मसीह .... 2) <br>
+             मैं मसीह का हूँ, हम सब मसीह के हैं<br></ul>
+    </h4>
+</div> 
+<br  id="song38">
+<div class="song">
+    <h3>38. गिन गिन के स्तुति करूं</h3> <br>
+    <h4>
+        <ul>गिन गिन के स्तुति करूं<br>
+            बेशुमार तेरे दानों के लिए <br>
+            अब तक तूने सम्भाला मुझे, <br>अपनी बाहों में लिए हुए .... 2)<br> <br>
+
+1. मेरे शत्रु का निशाना <br>
+मुझ पर होगा न सफल .... 2) <br>
+आंखों की पुतली जैसे <br>
+वो रखेगा मुझे हर पल .... 2) <br> <br>
+
+
+2. आंधियां बनके आयें, <br> ज़िन्दगी के फिकर .... 2) <br>
+कौन है तेरा खेवनहारा, <br>है भरोसा तेरा किधर  .... 2) <br> <br>
+
+3. आये मुझे जो मिटाने,  <br>वो शस्त्र होंगे बेअसर .... 2) <br>
+मेरे रचने वाला मुझ पर, <br> रखता है अपनी नज़र  .... 2)<br></ul>
+    </h4>
+</div> 
+<br  id="song39">
+<div class="song">
+    <h3>39. चिंता ना कर</h3> <br>
+    <h4>
+        <ul>चिंता ना कर <br>
+            वो मेरे साथ है .... 2) <br> <br>
+            
+            आंधिया मुझे डरा ना सकेगी  <br>
+            लेहरे मुझे डूबा ना सकेगी .... 2) <br>
+            क्युकी मेरे परमेश्वर मेरे साथ है <br> <br>
+            
+            जीवन की रहो में <br>
+            हलात यूं होंगे  <br>
+            सुजेगा न कुछ भी <br>
+            जब द्वार बंद होंगे .... 2) <br>
+            फिर भी भरोसा मेरे येशु पे रखूँगा  <br>
+            मतलाब की दुनिया में है येशु है अपना  <br> <br>
+            
+            कोई नहीं है किसीका यहाँ पर <br>
+            बस एक येशु है सच्चा यहाँ पर .... 2)  <br>
+            मेरे उनगली को पक्कड़के <br>
+            मुझको चलाएगा <br>
+            गिरने ना देगा मुझे को बाहो में उठएगा .... 2)<br></ul>
+    </h4>
+</div> 
+<br  id="song40">
+<div class="song">
+    <h3>40. चट्टान </h3> <br>
+    <h4>
+        <ul>भंवर के बीच में <br>
+            तू कहता है थम जा <br>
+            तू मेरी ताकत है  <br>
+            तू ही मेरा ईमान  <br> <br>
+            
+            ​
+            
+            बीते कल में तू  <br>
+            साथ मेरे था  <br>
+            आज भी मेरे  <br>
+            साथ है खड़ा  <br>
+            आने वाले कल में भी होगा  <br> <br>
+            
+            ​
+            
+            उठते हुए तूफानों में, तू ही मेरी चट्टान  <br>
+            बढ़ती हुई लहरों पे, तेरे कदमों के निशान <br> <br>
+            
+            ​
+            
+            बीमारियों में  <br>
+            तू कहता है उठ जा  <br>
+            यहोवा राफा  <br>
+            तू ही मेरी शिफा <br> <br>
+            
+            ​
+            
+            बीते कल में तू  <br>
+            
+            साथ मेरे था  <br>
+            
+            आज भी मेरे  <br>
+            
+            साथ है खड़ा  <br>
+            
+            आने वाले कल में भी होगा  <br> <br>
+
+            
+            उठते हुए तूफानों में, तू ही मेरी चट्टान  <br>
+            
+            बढ़ती हुई लहरों पे, तेरे कदमों के निशान<br> <br>
+
+            आते मेरे खिलाफ <br>
+            जब शत्रु के जलते तीर <br>
+            या जब दुश्मन ले आता  <br>
+            मुझको बाँधने ज़ंजीर <br>
+            तू ढाल बनकर मेरी  <br>
+            करता हर एक तीर तबाह <br> 
+            तेरे नाम से ही हो जाता  <br>
+            हर एक ज़ंजीर का नाश  <br>
+            महामारी, जादू-टोना या  <br>
+            जो कुछ भी दुनिया में हो  <br>
+            मुझे छू भी सके   <br>
+            मेरे पास भी आये   <br>
+            जब तू है तो अनहोना   <br>
+            मैंने देखा परखा जान लाया   <br>
+            तुझको मैंने अपना मान लिया   <br>
+            तेरे होते हुए मुझे आंच भी आये   <br>
+            ऐसा होने न दे तूने ठान लाया   <br>
+            ईमान भी तू चट्टान भी तू   <br>
+            मेरा दिल और मेरी जान भी तू   <br>
+            तूने दे दी जो जीत मुझे   <br>
+            उस जश्न का ऐलान भी तू   <br>
+            मैं गाऊंगा चिल्लाऊंगा   <br>
+            जी भर के ख़ुशी मनाऊंगा   <br>
+            लहरों पे चलते कदमों के निशान तेरे   <br>
+            मेरी शान भी तू   <br>  <br>
+            
+            ​
+            
+            बीमारी देख तेरा सर झुका   <br>
+            मुझ पर तेरा बस न चल सका   <br>
+            ऐसा कोई शास्त्र न बना   <br>
+            जो कर सकेगा मेरा सामना   .... 2)<br>  <br>
+            
+            
+            ​
+            
+            उठते हुए तूफानों  में, तू ही मेरी चट्टान   <br>
+            
+            बढ़ती हुई लहरों पे, तेरे कदमों के निशान  <br>  <br>
+            
+            ​
+            
+            मेरा भरोसा   <br>
+            तुझ पे खड़ा है   <br>
+            मेरा विश्वास तुझमे   <br>
+            तुझमे बना है   <br>
+            तुझमे ही है   <br></ul>
+    </h4>
+</div> 
+<br  id="song41">
+<div class="song">
+    <h3>41. जय जय प्रभु यीशु की</h3> <br>
+    <h4>
+        <ul>जय जय प्रभु यीशु की .... 2) <br>
+            हमको बचाने आया जगत में <br>
+            उसकी स्तुति करे  <br> <br>
+            ह, ह, ह, ह, ह, हाल्लेलुयाह  <br>
+            हो, हो, हो, हो, हो, होसन्ना <br>
+            ला, ला, ला, ला, ला, हाल्लेलुयाह आमीन <br> <br>
+            
+           
+           1.  खून की धरा बहती सूली से, <br> जिसमें धुले सब पाप, <br>
+            धो लो अब तुम अपने हृदय को, <br> उसमें रहे न दाग .... 2) <br> <br>
+           
+           2.  ग्रहण करो तुम आज यीशु को, <br> प्रेम की बहती धार, <br>
+            उसको बना लो खेवनहारा,  <br>नैयया लगा लो पार .... 2) <br> <br>
+           
+           3.  वापस आता मेरा प्रभु जी, <br> ले जाएगा साथ <br>
+            आशा मेरी अब तो यही हैै , <br>चलो तुम मेरे साथ .... 2) <br> <br>
+           
+           4. हरदम होंगे साथ यीशु के, <br> खुशी और शान्ति आराम <br>
+            आएगा वह लेने तुमको भी,  <br>रहना तुम तैयार .... 2)<br></ul>
+    </h4>
+</div> 
+<br  id="song42">
+<div class="song">
+    <h3>42. जय देने वाले प्रभु येशु को</h3> <br>
+    <h4>
+        <ul>जय देने वाले प्रभु येशु को <br>
+            कोटि कोटि धन्यवाद <br>
+            जीवन देने वाले प्रभु येशु को <br>
+            जीवन भर धन्यवाद  .... 2)<br><br>
+            हल्लेल्लुयाह हल्लेल्लुयाह गायेंगे .... 4) <br>
+            येशु जिंदा है वो आने वाला है .... 2) <br> <br>
+            
+            1. शांति देने वाले प्रभु येशु को <br>
+            कोटि कोटि धन्यवाद <br> 
+            मुक्ति देने वाले प्रभु येशु को  <br>
+            जीवन भर धन्यवाद  .... 2) <br> <br>
+            2. आनंद देने वाले प्रभु येशु को  <br>
+            कोटि कोटि धन्यवाद <br>
+            चंगा करने वाले प्रभु येशु को  <br>
+            जीवन भर धन्यवाद  .... 2)<br><br>
+            3. जीवन देने वाले प्रभु येशु को  <br>
+            कोटि कोटि धन्यवाद <br>
+            तृप्ति देने वाले प्रभु येशु को  <br>
+            जीवन भर धन्यवाद  .... 2)<br><br></ul>
+    </h4>
+</div> 
+<br  id="song43">
+<div class="song">
+    <h3>43. जब से प्यारा यीशु आया</h3> <br>
+    <h4>
+        <ul>जब से प्यारा यीशु आया, <br>
+            मेरा जीवन बदल गया<br>
+            जब से मैंने उसे हैं पाया,<br>
+            मेरा जीवन बदल बदल गया (2) <br><br>
+         
+         1. इस जहाँन की गन्दगी <br>
+         से मुझे छुड़ाया जान देकर .... 2) <br>
+         मेरा दिल मेरा मन मेरी काया .... 2)<br>
+         मेरा जीवन बदल बदल गया<br><br>
+         
+         2. रात काली बीत गयी है <br>
+         हुआ सबेरा सुबह तारा <br>
+         इसलिए मैंने यह गीत गाया .... 2)<br>
+         मेरा जीवन बदल बदल गया<br><br>
+          
+         3. मुझे खरीदा है मसीह ने खून देकर .... 2)<br>
+             मैं हूँ उसका मेरा न कोई सिवाय उसके .... 2)<br>
+             पुत्र ने है पिता से मिलाया .... 2)<br><br>
+         
+         4. मेरी राहों में न कांटे अब रहेंगे .... 2)<br>
+             मेरी मंजिल में भी मातम अब न होंगे ..... 2)<br>
+             हो गया दूर है मौत का साया .... 2)<br><br>
+         
+          <br><br></ul>
+    </h4>
+</div> 
+<br  id="song44">
+<div class="song">
+    <h3>44. जय बोलो जय बोलो</h3> <br>
+    <h4>
+        <ul>जय बोलो, जय बोलो <br>
+            यीशु मसीहा की जय बोलो .... 2) <br> <br>
+            
+            1. अन्धो को आंख दिया यीशु ने <br>
+            लंगड़ों को चला दिया यीशु ने .... 2) <br> <br>
+            
+            2. कोड़ी को चंगा किया यीशु ने <br>
+            लाजर को जिंदा किया यीशु ने .... 2) <br> <br>
+            
+            3. पापो से छुड़ा लिया यीशु ने <br>
+            हम सबको बचा लिया यीशु ने .... 2)<br> <br></ul>
+    </h4>
+</div> 
+<br  id="song45">
+<div class="song">
+    <h3>45. जिन्दगी मेरी बदल गई</h3> <br>
+    <h4>
+        <ul>जिन्दगी मेरी बदल गई  <br>
+            जब से मसीह को पाया है <br>
+            खिल गई है किलयां नई <br>
+            यीशु बहार लाया है .... 2)<br> <br>
+            
+            1. जीवन है क्या, पल ही दो पल का, <br>
+            किसने है जाना, होगा क्या कल का .... 2)<br>
+            घड़िया सुनहरी, फिर न लौटेंगी, <br>
+            मुक्ति और जीवन वो लाया है <br> <br>
+            
+            2. मार्ग में हमारे, वो दर्शक रहेगा, <br>
+            कदम डगमगाये, हाथ वो थामेगा .... 2) <br>
+            भटके हुओं को, राह दिखाने <br>
+            इस धरती पर वो आया है <br><br>
+            
+            3. जीवन की रोटी और अमृत जल को, <br>
+            कैसी भरपूरी, से देता वो हमको .... 2) <br>
+            लहू बहाकर, पाप हमारे <br>
+            प्यारे प्रभु ने उठाया है<br></ul>
+    </h4>
+</div> 
+<br  id="song46">
+<div class="song">
+    <h3>46. जैसे माता संभालती है</h3> <br>
+    <h4>
+        <ul>जैसे माता संभालती है,  <br>
+            वैसे यीशु संभालेगा .... 2) <br> <br>
+
+            1.  सीने से लगायेगा, <br> चिन्ता सब हटायेगा .... 2) <br> <br>
+            
+            2.  हाथ थामके ले जायेगा,  <br>चट्टान पर चढ़ायेगा .... 2) <br> <br>
+            
+            3.  मेरे कारण घायल हुआ,  <br>मेरे पापों को उठा लिया .... 2) <br> <br>
+            
+            4.  कभी भी न छोड़ेगा,  <br>कभी भी न त्यागेगा .... 2)<br></ul>
+    </h4>
+</div> 
+<br  id="song47">
+<div class="song">
+    <h3>47. जय  जय  नाम  येशु  नाम</h3> <br>
+    <h4>
+        <ul>जय  जय  नाम  येशु  नाम <br>
+            गाऊं  में  सुबहोशाम  ..... 2) <br>
+            बलहीन  का  सहारा , <br>
+            पापियों  का  दोस्त  है तू <br>
+            येशु  तू है  कितना  प्यारा <br>
+            शब्द  न  कैसे  बताऊँ ? .... 2) <br> <br>
+            जय  जय  नाम  येशु  नाम <br>
+            गाऊं  में  सुबहोशाम .... 2) <br> <br>
+            तुझ  में  बना  रहूँ  तो , <br>
+            अमृत  फल  लाऊं  मैं <br>
+            गाऊं  तेरी  जय  सदा  तो , <br> 
+            तुझ  सा  बन  जाऊं  मैं .... 2) <br> <br>
+            जय  जय  नाम  येशु  नाम <br>
+            गाऊं  में  सुबहोशाम  ..... 2) <br> <br>
+            
+            तू  ही  है  जो  मुझको  बुलाता <br>
+            देता  है  जीवन  जल <br>
+            तेरी  शक्ति  पाऊं  सदा  और <br>
+            योजनाए हो जाए सफल  .... 2)<br> <br>
+            जय  जय  नाम  येशु  नाम <br>
+            गाऊं  में  सुबहोशाम   <br></ul>
+    </h4>
+</div> 
+<br  id="song48">
+<div class="song">
+    <h3>48. जो क्रूस पे कुर्बान है</h3> <br>
+    <h4>
+        <ul> जो क्रूस पे कुर्बान है, <br> वह मेरा मसीहा है, <br>
+            हर जख्म जो उसका है, <br> वो मेरे गुनाह का है <br> <br>
+           
+           1. इस दुनियाँ में ले आये, <br> मेरे ही गुनाह उसको, <br>
+            यह जुल्मो सितम उस पर,  <br>मैंने ही कराया है <br> <br>
+               
+           2. इन्सान है वो कामिल,  <br>और सच्चा खुदा वह है, <br>
+             वह प्यार का दरिया है, <br> सच्चाई का रास्ता है <br> <br>
+           
+           3. देने को मुझे जीवन,  <br>खुद मौत सही उसने,   <br>       
+              क्या खूब है कुर्बानी, <br> क्या प्यार अनोखा है<br> <br></ul>
+    </h4>
+</div> 
+<br  id="song49">
+<div class="song">
+    <h3>43. आये है हम तेरे चरणों मे</h3> <br>
+    <h4>
+        <ul>आये है हम तेरे चरणों मे <br>
+            लेकर हम स्तुति <br>
+            हाल्लेलुयाह .... <br><br>
+             
+            1. प्यारे मसीह आशीष दे हमे <br>
+            आत्मा से तू भर दे हमे <br>
+            हाल्लेलुयाह .... <br><br>
+             
+            2. हम बच्चे है परमपिता के <br>
+            बढ़ना है हमे वचनों मे <br>
+            हाल्लेलुयाह .... <br><br>
+             
+            3. मिलती है हमे तुझ से चंगाईया <br>
+            देता तू हमे पापो से मुक्ति <br>
+            हाल्लेलुयाह .... <br></ul>
+    </h4>
+</div> 
+<br  id="song50">
+<div class="song">
+    <h3>43. आये है हम तेरे चरणों मे</h3> <br>
+    <h4>
+        <ul>आये है हम तेरे चरणों मे <br>
+            लेकर हम स्तुति <br>
+            हाल्लेलुयाह .... <br><br>
+             
+            1. प्यारे मसीह आशीष दे हमे <br>
+            आत्मा से तू भर दे हमे <br>
+            हाल्लेलुयाह .... <br><br>
+             
+            2. हम बच्चे है परमपिता के <br>
+            बढ़ना है हमे वचनों मे <br>
+            हाल्लेलुयाह .... <br><br>
+             
+            3. मिलती है हमे तुझ से चंगाईया <br>
+            देता तू हमे पापो से मुक्ति <br>
+            हाल्लेलुयाह .... <br></ul>
+    </h4>
+</div> 
+
+
+
+
+
+
+
 
 
 <script>
