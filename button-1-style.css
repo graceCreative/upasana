@@ -369,7 +369,7 @@ content{
         height: 4px;
         width: 20px;
         margin: 2px 0px;
-        background: linear-gradient(to right, #01A8FF, #0169FF) ;
+        background: linear-gradient(to right, #00d5ff, #143674) ;
         border-radius: 50px;
     }
     
@@ -384,7 +384,7 @@ content{
     }
 
     .home-icon{
-        color: #0169ff;
+        color: #143674;
         margin-top: 6px;
     }
 
@@ -415,7 +415,7 @@ content{
         
     .dark, .light{
         font-size: large;
-        color: #0169ff;
+        color: #143674;
         height: 30px;
         width: 30px;
         text-align: center;
@@ -445,7 +445,7 @@ content{
         box-shadow: 0 3px 6px rgb(0, 0, 0);
         transition: 0.2s;
         display: block;
-        color: #01A8FF;
+        color: white;
     }
     body.active .dark{
         display: none;
@@ -495,7 +495,7 @@ content{
         color: white;
         padding: 9px 20px;
         border-radius: 50px;
-        background: linear-gradient(to left,  #01A8FF, #0169FF);
+        background: linear-gradient(to left,  #00d5ff, #143674);
         box-shadow: 0 2px 10px #01a6ff70;
     }
 
@@ -510,7 +510,7 @@ content{
 
     .stuti{
         padding: 5px 5px;
-        color: #01A8FF;
+        color: #164192;
         font-size: 0.7rem;
         font-weight: bold;
         margin: 0;
@@ -531,7 +531,7 @@ content{
         border-radius: 15px;
         box-shadow: 0 2px 6px #01a6ffa0;
         margin: 10px 10px 0 10px;
-        background: linear-gradient(to right,  #01A8FF, #0169FF);
+        background: linear-gradient(to right,  #00d5ff, #143674);
         overflow: hidden;
         justify-content: space-around;
     }
@@ -547,7 +547,7 @@ content{
         width: 50px;
         border-radius: 50%;
         box-shadow: 0 2px 10px #01a6ff87;
-        background: linear-gradient(to left,  #01A8FF, #0169FF);
+        background: linear-gradient(to left,  #00d5ff, #143674);
         border: none;
         align-items: center;
     }
@@ -563,7 +563,7 @@ content{
         width: 50px;
         border-radius: 50%;
         box-shadow: 0 2px 10px #01a6ff6e;
-        background: linear-gradient(to right,  #01A8FF, #0169FF);
+        background: linear-gradient(to right,  #00d5ff, #143674);
         float: right;
         margin-right: 20px;
         border: none;
