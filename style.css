@@ -99,8 +99,8 @@ header{
     text-align: center;
     align-items: center;
     border-radius: 11px;
-    background-color: #0169ff;
-    box-shadow: -5px 8px 20px #01a6ff79;
+    background-color: #0d5288;
+    box-shadow: -5px 8px 20px #0d53883a;
     text-decoration: none;
     color: white;
     transition: 0.5s;
@@ -303,7 +303,7 @@ a{
         height: 4px;
         width: 20px;
         margin: 2px 0px;
-        background: linear-gradient(to right, #01A8FF, #0169ff) ;
+        background: linear-gradient(to right, #00d5ff, #143674) ;
         border-radius: 50px;
     }
 
@@ -336,8 +336,8 @@ a{
         text-align: center;
         align-items: center;
         border-radius: 11px;
-        background-color: #0169FF;
-        box-shadow: -5px 8px 20px #01a6ff76;
+        background-color: #0c64a7;
+        box-shadow: -5px 8px 20px #0d538852;
         text-decoration: none;
         color: white;
         transition: 0.5s;
@@ -425,7 +425,7 @@ a{
         border-radius: 12px;
         color: white;
         box-shadow:  0 10px 25px #016bff5d ;
-        background: linear-gradient(to right, #0552aa , #1fa2e6);
+        background: linear-gradient(to right, #00d5ff, #143674);
         border: none;
     }
 
