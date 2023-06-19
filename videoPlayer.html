@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Laila:wght@600&family=Poppins&display=swap');
+    .video{
+        width: 100vw;
+        margin-top: 10px;
+        border-radius: 25px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.089);
+    }
+
+    video{
+        width: 100vw;
+    }
+
+    .title{
+        background-color: rgb(251, 250, 255);
+        padding: 20px;
+        margin-top: 20px;
+        font-family: poppins;
+        font-weight: bold;
+        border-radius: 12px;
+    }
+
+    .speed{
+        margin-top: 10px;
+        border: none;
+        font-weight: bold;
+        border-radius: 12px;
+        text-align: center;
+        background-color: rgb(251, 250, 255);
+    }
+
+    .speed button{
+        border: none;
+        padding: 15px;
+        border-radius: 10px;
+        font-family: poppins;
+        font-size: large;
+        font-weight: bolder;
+        color: rgb(204, 204, 204);
+        background-color: rgb(251, 250, 255);
+    }
+
+    h4{
+        font-family: poppins;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    .playing{
+        margin-top: 10px;
+        background-color: rgb(251, 250, 255);
+        padding: 20px;
+        border-radius: 12px;
+        
+    }
+
+
+</style>
+<body>
+    <div class="video">
+        <video src="video/nature.mp4" controls></video>
+    </div>
+    <div class="title">प्रार्थना की संरचना</div>
+    <div class="speed">
+        <button>0.5x</button>
+        <button>1.0x</button>
+        <button>1.5x</button>
+        <button>1.8x</button>
+        <button>2.0x</button>
+    </div>
+
+    <h4>Now Playing</h4>
+    <div class="playing">
+
+    </div>
+
+    <h4>Next</h4>
+    <div class="playing">
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>
